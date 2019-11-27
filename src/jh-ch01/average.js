@@ -14,8 +14,8 @@ console.log('명령형 프로그래밍 평균점수: ', averageFunc(input));
 
 //  함수형 프로그래밍 컨셉
 const sum = arr => arr.reduce((acc, cur) => acc + cur, 0);
-const size = arr => arr.length;
 const total = arr => sum(arr);
+const size = arr => arr.length;
 const device = (a, b) => a / b;
 const average = arr => device(total(arr), size(arr));
 console.log('함수형 프로그래밍 평균점수:', average(input));
